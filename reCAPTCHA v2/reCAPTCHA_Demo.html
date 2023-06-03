@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>reCAPTCHA demo: Simple page</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+      function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+      }
+    </script>
+  </head>
+  <body>
+    <form id="demo-form" action="login" method="POST">
+      <button
+        class="g-recaptcha"
+        data-sitekey="6Lf7Jm8jAAAAAFs4VDXwFx8n9UMaOGyJmFM2efHZ"
+        data-callback="onSubmit"
+      >
+        Submit
+      </button>
+      <br />
+    </form>
+  </body>
+</html>
